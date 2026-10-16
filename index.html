@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Post Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Dynamic Post Explorer</h1>
+    <p class="description">
+      Explore top posts from JSONPlaceholder without refreshing the page.
+    </p>
+
+    <!-- Trigger button (Requirement 01) -->
+    <button id="loadPostsBtn" class="btn">Load Posts</button>
+
+    <!-- Visual status & loading indicator area (Requirement 05) -->
+    <div id="statusMessage" class="status-message" aria-live="polite"></div>
+
+    <!-- Posts container (Requirement 04, 08) -->
+    <section id="postsContainer" class="posts-container"></section>
+  </main>
+
+  <!-- Connects external app.js file containing fetch logic -->
+  <script src="app.js"></script>
+</body>
+</html>
